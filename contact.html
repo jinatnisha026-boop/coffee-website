@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Brew & Bean</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div class="logo">
+            Brew<span>&</span>Bean ☕
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+
+        <h1>Contact <span>Us</span></h1>
+
+        <p>
+            We'd love to hear from you! ☕
+        </p>
+
+        <div class="contact-info">
+
+            <h2>📍 Address</h2>
+            <p>Pune, Maharashtra, India 411048</p>
+
+            <h2>📞 Phone</h2>
+            <p>+91 93090 21046</p>
+
+            <h2>📧 Email</h2>
+            <p>jinatnisha026@gmail.com</p>
+
+            <h2>🕐 Opening Hours</h2>
+            <p>Monday - Sunday: 9:00 AM - 10:00 PM</p>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <h2 class="form-title">Send Us a Message</h2>
+
+       <form action="https://formspree.io/f/xqpzjkkq" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
+<script>
+window.addEventListener("pageshow", function () {
+    document.querySelector("form").reset();
+});
+</script>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 Brew & Bean Coffee</p>
+    </footer>
+
+</body>
+
+</html>

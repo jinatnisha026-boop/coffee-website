@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bean - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Brew & Bean ☕</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+			<a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <section class="page">
+
+        <h1>OUR MENU ☕</h1>
+		<section class="section" id="menu">
+		
+		
+
+        <div class="menu-container">
+
+            <div class="card">
+			
+			    <img src="cappuccino.jpg" alt="CAPPUCCINO">
+                <h2>☕ CAPPUCCINO</h2>
+                <p>Espresso with steamed milk and creamy foam.</p>
+				<div class="card-button">
+                <h3>₹149</h3>
+<button onclick="showItem(
+'Cappuccino',
+'A classic coffee made with espresso, steamed milk, and creamy foam.',
+149,
+'cappuccino.jpg'
+)">
+View Details
+</button>
+				</div>
+            </div>
+
+            <div class="card">
+			    <img src="latte.jpg" alt="LATTE">
+                <h2>☕ LATTE</h2>
+                <p>Smooth espresso with steamed milk.</p>
+                <h3>₹159</h3>
+<button onclick="showItem(
+'Latte',
+'Smooth espresso combined with steamed milk and a light layer of foam.',
+159,
+'latte.jpg'
+)">
+View Details
+</button>
+            </div>
+
+            <div class="card">
+			    <img src="moca.jpg" alt="MOCHA">
+                <h2>🍫 MOCHA</h2>
+                <p>Chocolate, espresso and steamed milk.</p>
+                <h3>₹169</h3>
+<button onclick="showItem(
+'Mocha',
+'A delicious combination of chocolate, espresso, steamed milk, and creamy foam.',
+169,
+'moca.jpg'
+)">
+View Details
+</button>
+            </div>
+
+            <div class="card">
+			    <img src="iced.jpg" alt="ICED COFFEE">
+                <h2>🥤 ICED COFFEE</h2>
+                <p>Cold and refreshing coffee.</p>
+                <h3>₹129</h3>
+<button onclick="showItem(
+'Iced Coffee',
+'Cold and refreshing coffee served over ice for a smooth and chilled taste.',
+129,
+'iced.jpg'
+)">
+View Details
+</button>
+            </div>
+
+            <div class="card">
+			    <img src="croissant.jpg" alt="CROISSANT">
+                <h2>🥐CROISSANT</h2>
+                <p>Fresh and buttery croissant.</p>
+                <h3>₹119</h3>
+<button onclick="showItem(
+'Croissant',
+'Fresh and buttery croissant with a crispy golden outside and soft flaky layers.',
+119,
+'croissant.jpg'
+)">
+View Details
+</button>
+            </div>
+
+            <div class="card">
+			    <img src="cake.jpg" alt="CHOCOLATE CAKE">
+                <h2>🍰 CHOCOLATE CAKE</h2>
+                <p>Soft and delicious chocolate cake.</p>
+                <h3>₹159</h3>
+<button onclick="showItem(
+'Chocolate Cake',
+'Soft and delicious chocolate cake with rich chocolate flavor and creamy layers.',
+159,
+'cake.jpg'
+)">
+View Details
+</button>            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Brew & Bean Coffee</p>
+    </footer>
+<div id="itemModal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeItem()">×</span>
+
+        <img id="itemImage" class="modal-image" src="" alt="Item">
+
+        <h2 id="itemName"></h2>
+
+        <p id="itemDescription"></p>
+
+        <h3 id="itemPrice"></h3>
+
+        <div class="quantity-box">
+            <button onclick="decreaseQuantity()">−</button>
+
+            <span id="itemQuantity">1</span>
+
+            <button onclick="increaseQuantity()">+</button>
+        </div>
+
+        <div class="total-price">
+            Total: ₹<span id="itemTotal">0</span>
+        </div>
+
+        <button class="add-cart-btn" onclick="addSelectedItem()">
+            🛒 Add to Cart
+        </button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
